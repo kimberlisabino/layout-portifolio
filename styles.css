@@ -1,0 +1,147 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    font-family: 'Chakra Petch', sans-serif;;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+.container {
+    display:flex;
+    gap: 30px;
+}
+
+aside {
+    flex: 1;
+    margin: 40px auto auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main {
+    flex: 3;
+    margin: 40px 40px auto auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.posts {
+    padding: 15px;
+}
+
+.id {
+    text-align: center;
+    width: 348px;
+    height: 270px;
+    background-color: var(--bg-cards);
+    border-radius: 10px;
+    color: var(--text-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 30px auto 20px auto;
+    border: 3px solid green;
+}
+
+.infos, .tech, .experiences, .education, .projects, .posts {
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; 
+}
+
+.infos {
+    width: 348px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.infos li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+
+.tech {
+    width: 348px;
+    height: 208px;
+    list-style: none;
+    padding: 25px;
+}
+
+.tech ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 15px;
+}
+
+.tech ul li {
+    background-color: var(--bg-techs);
+    border-radius: 20px;
+    width: 100px;
+    height: 24px;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiences, .education {
+    width: 348px;
+    height: 280px;
+    padding: 25px;
+}
+
+.experiences ul, .education ul {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.experiences ul li, .education ul li {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin: 20px auto 20px auto;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
